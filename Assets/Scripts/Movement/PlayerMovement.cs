@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour {
 		ChangeRingDirrection = InputController.GetInput ();
 		if (InitialRadius <= Radius + ChangeRingDirrection * InterpolationRadius && Radius + ChangeRingDirrection * InterpolationRadius <= FinalRadius && GetRing () > 0 )
 			NewRadius = Radius + ChangeRingDirrection * InterpolationRadius;
-		if ( NewRadius - Radius > 0.1f )
+		if ( Mathf.Abs (NewRadius - Radius) > 0.1f )
 			Radius = Mathf.Lerp ( Radius, NewRadius, RadiusLerpSpeed * Time.deltaTime );
 		else
 			Radius = NewRadius;
