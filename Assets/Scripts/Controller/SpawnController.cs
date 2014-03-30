@@ -2,23 +2,33 @@
 using System.Collections;
 
 public class SpawnController : MonoBehaviour {
+	static GameObject Point;
+	static long LastRing = 4;
 
-	public GameObject Point;
+	public static ResetPoint () {
+		LastRing = 4
+		Point.rigidbody.velocity = new Vector3 (0f, 0f, 0f);
+		Point.transform.position = new Vector3 ( 0, 0, 50 );
+	}
 
-	void SpawnPoint () {
+	public static void SpawnPoint () {
 		float DegreeAngle, RadianAngle, Radius;
 		long Ring = 4;
 		DegreeAngle = Random.Range (0f, 360f);
-		while ( Ring != 4 )
-			Ring = (long)Random.Range ( 0, 4 );
+		while ( Ring == 4 || Ring == LastRing )
+			Ring = (long)Random.Range ( 0f, 4f );
 
 		Radius = PlayerController.GetRadiusOfRing (Ring);
 		RadianAngle = DegreeAngle * Mathf.PI / 180f;
 
+		LastRing = Ring;
+		Point.rigidbody.velocity = new Vector3 (0f, 0f, 0f);
+		Point.transform.position = MovementController.ChangeToAngle (Radius, DegreeAngle);
+	}
 
-		Vector3 position = new Vector3 (GameController.Ring.x - Radius * Mathf.Cos (RadianAngle), GameController.Ring.y + Radius * Mathf.Sin (RadianAngle), GameController.Ring.z);
-
-		Instantiate ( Resources.Load<GameObject> ("Point"), position, Quaternion.Euler (0, 0, 0) );
+	void Awake () {
+		Point = Instantiate ( Resources.Load<GameObject> ("Point"), new Vector3 ( 0, 0, 50 ), Quaternion.Euler (0, 0, 0) ) as GameObject;
+		SpawnPoint ();
 	}
 	
 	// Update is called once per frame

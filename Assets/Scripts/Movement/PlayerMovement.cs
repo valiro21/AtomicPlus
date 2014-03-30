@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float dirrection = 1, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius;
+	public float dirrection = 1f, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius;
 	float DegreeAngle = 0f, NewRadius, ChangeRingDirrection = 0f, Radius;
 
 	public void Reset () {
@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (collision.collider.tag == "Point") {
 			dirrection *= -1f;
 			GameController.GetPoint ();
+			SpawnController.SpawnPoint ();
 		}
 		else if ( collision.collider.tag == "Bullet" ) {
 			PlayerController.DamagePlayer ( );
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		DegreeAngle = MovementController.LerpAngle ( DegreeAngle, DegreesPerSecond );
+		DegreeAngle = MovementController.LerpAngle ( DegreeAngle, dirrection * DegreesPerSecond );
 
 		transform.position = MovementController.ChangeToAngle (Radius, DegreeAngle);
 

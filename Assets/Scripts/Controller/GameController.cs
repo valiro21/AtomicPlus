@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	public static float score, level;
+	public static float score = 0, level;
 	public static Vector3 Ring = new Vector3(0,0,-50);
 	public static GameObject God, ValuesGod;
 
