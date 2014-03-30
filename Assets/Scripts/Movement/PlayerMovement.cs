@@ -3,12 +3,12 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float dirrection = 1, RadiusLerpSpeed, InitialRadius, InterpolationRadius, DegreesPerSecond;
-	float DegreeAngle = 0f, RadianAngle = 0f, FinalRadius, NewRadius, ChangeRingDirrection = 0f, Radius;
+	public float dirrection = 1, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius;
+	float DegreeAngle = 0f, NewRadius, ChangeRingDirrection = 0f, Radius;
 
 	public void Reset () {
-		DegreeAngle = RadianAngle = 0f;
-		Radius = InitialRadius;
+		DegreeAngle = 0f;
+		Radius = NewRadius = InitialRadius;
 	}
 
 	void OnCollisionEnter ( Collision collision ) {
@@ -21,39 +21,29 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
-	void LerpAngle () {
-		DegreeAngle += DegreesPerSecond * Time.deltaTime;
-		if (DegreeAngle > 360f)
-			DegreeAngle -= 360f;
-		else if ( DegreeAngle < 0f )
-			DegreeAngle += 360f;
-	}
 
-	public long GetRing () {
-		if ( (long)( ( Radius - InitialRadius) / InterpolationRadius) == (Radius - InitialRadius) / InterpolationRadius )
-			return (long)((Radius - InitialRadius) / InterpolationRadius) + 1;
-		return 0;
-	}
 
-	void Awake () {
-		FinalRadius = InitialRadius + 3 * InterpolationRadius;
-		Radius = NewRadius = InitialRadius;
+
+
+	void Start () {
+		InitialRadius = MovementController.InitialRadius;
+		InterpolationRadius = MovementController.InterpolationRadius;
+		FinalRadius = MovementController.FinalRadius;
+
+		Reset ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		LerpAngle ();
-		RadianAngle = DegreeAngle * Mathf.PI / 180f;
+		DegreeAngle = MovementController.LerpAngle ( DegreeAngle, DegreesPerSecond );
 
-		transform.position = new Vector3 (GameController.center.x - Radius * Mathf.Cos (RadianAngle), GameController.center.y + Radius * Mathf.Sin (RadianAngle), transform.position.z);
+		transform.position = MovementController.ChangeToAngle (Radius, DegreeAngle);
 
 		//get radius changes
 		ChangeRingDirrection = InputController.GetInput ();
-		if (InitialRadius <= Radius + ChangeRingDirrection * InterpolationRadius && Radius + ChangeRingDirrection * InterpolationRadius <= FinalRadius && GetRing () > 0 )
+		if (InitialRadius <= Radius + ChangeRingDirrection * InterpolationRadius && Radius + ChangeRingDirrection * InterpolationRadius <= FinalRadius && MovementController.GetRing (Radius) > 0 )
 			NewRadius = Radius + ChangeRingDirrection * InterpolationRadius;
-		if ( Mathf.Abs (NewRadius - Radius) > 0.1f )
-			Radius = Mathf.Lerp ( Radius, NewRadius, RadiusLerpSpeed * Time.deltaTime );
-		else
-			Radius = NewRadius;
+
+		Radius = MovementController.RadiusLerp (Radius, NewRadius, RadiusLerpSpeed);
 	}
 }

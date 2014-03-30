@@ -4,8 +4,8 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	public static float score, level;
-	public static Vector3 center = new Vector3(0,0,0);
-	public static GameObject God;
+	public static Vector3 Ring = new Vector3(0,0,-50);
+	public static GameObject God, ValuesGod;
 
 	public IEnumerator LevelOver () {
 		yield return new WaitForSeconds (1f);
@@ -25,5 +25,6 @@ public class GameController : MonoBehaviour {
 	
 	void Awake () {
 		God = gameObject;
+		ValuesGod = GameObject.Find ( "ValuesGod" );
 	}
 }

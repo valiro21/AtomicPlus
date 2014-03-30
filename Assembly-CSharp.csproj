@@ -48,8 +48,11 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\InputController.cs" />
+     <Compile Include="Assets\Scripts\Controller\MovementController.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Controller\SpawnController.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Values\MovementValues.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
