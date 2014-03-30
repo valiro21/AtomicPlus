@@ -22,12 +22,21 @@ public class MovementController : MonoBehaviour {
 		return NewRadius;
 	}
 
+	public static float RadiusLerp ( float Radius, float NewRadius, float Speed, float Offset ) {
+		if ( Mathf.Abs (NewRadius - Radius) > Offset )
+			return Mathf.Lerp ( Radius, NewRadius, Speed * Time.deltaTime );
+		return NewRadius;
+	}
+
 	public static float LerpAngle (float DegreeAngle, float DegreesPerSecond) {
 		DegreeAngle += DegreesPerSecond * Time.deltaTime;
 		if (DegreeAngle > 360f)
 			DegreeAngle -= 360f;
 		else if ( DegreeAngle < 0f )
 			DegreeAngle += 360f;
+
+		if (Mathf.Abs (DegreeAngle - 360f) < 1f)
+			DegreeAngle = 0f;
 
 		return DegreeAngle;
 	}

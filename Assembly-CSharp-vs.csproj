@@ -51,6 +51,8 @@
      <Compile Include="Assets\Scripts\Controller\MovementController.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Controller\SpawnController.cs" />
+     <Compile Include="Assets\Scripts\Controller\SpawnPool.cs" />
+     <Compile Include="Assets\Scripts\Movement\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Values\MovementValues.cs" />
   </ItemGroup>
