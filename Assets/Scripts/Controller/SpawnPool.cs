@@ -28,6 +28,21 @@ public class SpawnPool : MonoBehaviour {
 		}
 	}
 
+	public void SpawnObjects ( float Degree, float OffsetDegree, long number, long mode) {
+		float MinusOffsetAngle = Degree - OffsetDegree, PlusOffsetAngle = Degree + OffsetDegree;
+		if (MinusOffsetAngle < 0f)
+			MinusOffsetAngle += 360f;
+		if (PlusOffsetAngle > 360f)
+			PlusOffsetAngle -= 360f;
+
+		if (number % 2 > 0)
+			SpawnObject ( Degree, mode );
+		if ( number > 2 ) {
+			SpawnObject ( MinusOffsetAngle, mode );
+			SpawnObject ( PlusOffsetAngle, mode );
+		}
+	}
+
 
 
 	void Awake () {

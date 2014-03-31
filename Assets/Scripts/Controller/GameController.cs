@@ -27,4 +27,8 @@ public class GameController : MonoBehaviour {
 		God = gameObject;
 		ValuesGod = GameObject.Find ( "ValuesGod" );
 	}
+
+	void Start () {
+		DrawController.Reset ();
+	}
 }

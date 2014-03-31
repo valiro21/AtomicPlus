@@ -37,7 +37,7 @@ public class SpawnController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if ((long)Time.time - prevtime > 0)
-			Atom.GetComponent<SpawnPool>().SpawnObject ( 30f, (long)Time.time % 4 );
+			Atom.GetComponent<SpawnPool>().SpawnObjects ( 30f, 10f, 3, (long)Time.time % 4 );
 		prevtime = (long)Time.time;
 	}
 }

@@ -17,9 +17,25 @@ public class MovementController : MonoBehaviour {
 	}
 
 	public static float RadiusLerp ( float Radius, float NewRadius, float Speed ) {
-		if ( Mathf.Abs (NewRadius - Radius) > 0.1f )
-			return Mathf.Lerp ( Radius, NewRadius, Speed * Time.deltaTime );
-		return NewRadius;
+		float rez;
+		if ( Radius <= NewRadius ) {
+			rez = Radius + Radius * Speed * Time.deltaTime;
+			if ( rez > NewRadius )
+				rez = NewRadius;
+		}
+		else {
+			rez = Radius - Radius * Speed * Time.deltaTime;
+			if ( rez < NewRadius )
+				rez = NewRadius;
+		}
+		return rez;
+	}
+
+	public static float ConstantLerp ( float Radius, float NewRadius, float SpeedPerSecond ) {
+		float rez = Radius + SpeedPerSecond * Time.deltaTime;
+		if (rez > NewRadius)
+			rez = NewRadius;
+		return rez;
 	}
 
 	public static float RadiusLerp ( float Radius, float NewRadius, float Speed, float Offset ) {
