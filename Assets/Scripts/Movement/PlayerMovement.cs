@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float dirrection = 1f, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius;
 	float DegreeAngle = 0f, NewRadius, ChangeRingDirrection = 0f, Radius;
+	GameObject SurroundingCircle;
 
 	public void Reset () {
 		DegreeAngle = 0f;
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour {
 		InitialRadius = MovementController.InitialRadius;
 		InterpolationRadius = MovementController.InterpolationRadius;
 		FinalRadius = MovementController.FinalRadius;
+		SurroundingCircle = new GameObject ();
 
 		Reset ();
 	}
@@ -46,5 +48,8 @@ public class PlayerMovement : MonoBehaviour {
 			NewRadius = Radius + ChangeRingDirrection * InterpolationRadius;
 
 		Radius = MovementController.RadiusLerp (Radius, NewRadius, RadiusLerpSpeed);
+
+		//draw surrounding circle
+		DrawController.DrawArc ( SurroundingCircle, DegreeAngle, DegreeAngle - 5f, Radius, 0.1f, 0.1f, Color.white );
 	}
 }

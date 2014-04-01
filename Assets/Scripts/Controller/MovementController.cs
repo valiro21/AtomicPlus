@@ -16,6 +16,18 @@ public class MovementController : MonoBehaviour {
 		return new Vector3 (GameController.Ring.x - Radius * Mathf.Cos (RadianAngle), GameController.Ring.y + Radius * Mathf.Sin (RadianAngle), GameController.Ring.z);
 	}
 
+	public static float RepairAngle ( float DegreeAngle ) {
+		long ratio = (long)(DegreeAngle / 360f);
+		DegreeAngle -= (float)ratio * 360f;
+
+		if (DegreeAngle < 0f)
+			DegreeAngle += 360f;
+		if (DegreeAngle > 360f)
+			DegreeAngle -= 360f;
+
+		return DegreeAngle;
+	}
+
 	public static float RadiusLerp ( float Radius, float NewRadius, float Speed ) {
 		float rez;
 		if ( Radius <= NewRadius ) {

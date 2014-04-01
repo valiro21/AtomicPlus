@@ -29,6 +29,5 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Start () {
-		DrawController.Reset ();
 	}
 }

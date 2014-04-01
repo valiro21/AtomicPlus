@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour {
 	long i = 0;
 	public long mode;
 
-	float Radius, NewRadius, WaitFrame = -1f;
+	float Radius, NewRadius;
 
 
 	void Pulsate () {

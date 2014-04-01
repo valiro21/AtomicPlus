@@ -4,7 +4,7 @@ using System.Collections;
 public class SpawnController : MonoBehaviour {
 	static GameObject Point, Atom;
 	static long LastRing = 4, prevtime = 0;
-	public static float OutOfBounds = 20f;
+	public static float OutOfBounds = 12f;
 
 	public static void ResetPoint () {
 		LastRing = 4;
