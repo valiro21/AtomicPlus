@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameController : MonoBehaviour {
 
 	public static float score = 0, level;
-	public static Vector3 Ring = new Vector3(0,0,-50);
+	public static Vector3 LeftRing = new Vector3(-1f, 0,-50f), Ring = new Vector3(0,0,-50f);
 	public static GameObject God, ValuesGod;
 
 	public IEnumerator LevelOver () {
@@ -21,6 +22,14 @@ public class GameController : MonoBehaviour {
 
 	public static void GetPoint () {
 		score++;
+	}
+
+	public static void RemakeGameObjectList ( ref List<GameObject> list ) {
+		if (list == null)
+			list = new List<GameObject> ();
+		for (int i = 0; i < list.Count; i++)
+			Destroy (list [i]);
+		list.Clear ();
 	}
 	
 	void Awake () {

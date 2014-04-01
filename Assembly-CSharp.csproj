@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Controller\SpawnPool.cs" />
      <Compile Include="Assets\Scripts\Movement\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Movement\PointMovement.cs" />
      <Compile Include="Assets\Scripts\Values\MovementValues.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

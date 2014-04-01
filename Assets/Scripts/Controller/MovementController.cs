@@ -5,12 +5,16 @@ public class MovementController : MonoBehaviour {
 
 	public static float InitialRadius, InterpolationRadius, FinalRadius;
 
+	public static bool IsInCollider ( Vector3 position ) {
+		return PlayerController.Player.collider.bounds.Contains ( position ) | SpawnController.Point.collider.bounds.Contains ( position );
+	}
+
 	public static long GetRing ( float Radius ) {
 		if ( (long)( ( Radius - InitialRadius) / InterpolationRadius) == (Radius - InitialRadius) / InterpolationRadius )
 			return (long)((Radius - InitialRadius) / InterpolationRadius) + 1;
 		return 0;
 	}
-
+	
 	public static Vector3 ChangeToAngle (float Radius, float DegreeAngle ) {
 		float RadianAngle = DegreeAngle * Mathf.PI / 180f;
 		return new Vector3 (GameController.Ring.x - Radius * Mathf.Cos (RadianAngle), GameController.Ring.y + Radius * Mathf.Sin (RadianAngle), GameController.Ring.z);
@@ -18,7 +22,7 @@ public class MovementController : MonoBehaviour {
 
 	public static float RepairAngle ( float DegreeAngle ) {
 		long ratio = (long)(DegreeAngle / 360f);
-		DegreeAngle -= (float)ratio * 360f;
+		DegreeAngle -= ratio * 360f;
 
 		if (DegreeAngle < 0f)
 			DegreeAngle += 360f;

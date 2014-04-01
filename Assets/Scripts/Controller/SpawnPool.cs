@@ -53,7 +53,4 @@ public class SpawnPool : MonoBehaviour {
 			PoolObjects[i].active = false;
 		}
 	}
-
-	void Update () {
-	}
 }

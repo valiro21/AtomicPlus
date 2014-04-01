@@ -2,22 +2,19 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controller\DrawController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controller\DrawController.cs" Line="41" Column="6" />
-      <File FileName="c:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\SpawnController.cs" Line="40" Column="1" />
-      <File FileName="Assets\Scripts\Controller\SpawnPool.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controller\GameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Movement\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controller\MovementController.cs" Line="21" Column="13" />
-      <File FileName="Assets\Scripts\Controller\DrawController.cs" Line="94" Column="1" />
+      <File FileName="Assets\Scripts\Controller\DrawController.cs" Line="126" Column="18" />
+      <File FileName="Assets\Scripts\Movement\PlayerMovement.cs" Line="53" Column="2" />
+      <File FileName="Assets\Scripts\Controller\DrawController.cs" Line="137" Column="1" />
+      <File FileName="Assets\Scripts\Movement\PointMovement.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Movement\EnemyMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Values\MovementValues.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controller\SpawnController.cs" Line="41" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="86" />
-      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="31" />
-      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="39" />
+      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="32" />
+      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="58" />
+      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="64" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
