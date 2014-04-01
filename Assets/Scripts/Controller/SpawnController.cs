@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class SpawnController : MonoBehaviour {
-	static GameObject Point, Atom;
+	public static GameObject Point, Atom;
 	static long LastRing = 4, prevtime = 0;
 	public static float OutOfBounds = 12f;
 
