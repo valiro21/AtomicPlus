@@ -7,6 +7,7 @@ public class PointMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.rotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z + RotationSpeedPerSecond * Time.deltaTime);
+		if ( GameController.mode == 3 )
+			transform.rotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z + RotationSpeedPerSecond * Time.deltaTime);
 	}
 }

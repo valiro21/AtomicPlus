@@ -3,25 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class GameController : MonoBehaviour {
-
-	public static float score = 0, level;
+	
 	public static Vector3 LeftRing = new Vector3(-1f, 0,-50f), Ring = new Vector3(0,0,-50f);
-	public static GameObject God, ValuesGod;
-
-	public IEnumerator LevelOver () {
-		yield return new WaitForSeconds (1f);
-	}
-
-	public void StartLevelOver () {
-		StartCoroutine ( LevelOver() );
-	}
+	public static GameObject God, ValuesGod, AudioGod;
+	public static int mode = 0, Difficulty = 0, GameMode = 0, score = 0, level = 0, PlayMode = 0; 
+	public static bool Highscore = false;
 
 	public static void GameOver () {
-		God.GetComponent<GameController> ().StartLevelOver ();
+		Highscore = false;
+		if ( score > PlayerPrefs.GetInt ( "Highscore" ) ) {
+			PlayerPrefs.SetInt ("Highscore", score);
+			Highscore = true;
+		}
+		mode = 5;
+		SpawnController.DestroyPoint ();
+		AudioController.StartMenuMusic ();
 	}
 
 	public static void GetPoint () {
 		score++;
+	}
+	
+
+	public static void StartGame () {
+		//SpawnController.Spawn = Difficulty + 1;
+		AudioController.StartGameMusic ();
+		PlayerController.Revive ();
+		SpawnController.SpawnPoint ();
+		mode = 3;
 	}
 
 	public static void RemakeGameObjectList ( ref List<GameObject> list ) {
@@ -34,9 +43,11 @@ public class GameController : MonoBehaviour {
 	
 	void Awake () {
 		God = gameObject;
+		AudioGod = GameObject.Find ( "AudioGod" );
 		ValuesGod = GameObject.Find ( "ValuesGod" );
 	}
 
 	void Start () {
+		SpawnController.DestroyPoint ();
 	}
 }

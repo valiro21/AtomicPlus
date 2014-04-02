@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Controller\AudioController.cs" />
+     <Compile Include="Assets\Scripts\Controller\AudioPool.cs" />
      <Compile Include="Assets\Scripts\Controller\DrawController.cs" />
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\InputController.cs" />
@@ -53,9 +55,12 @@
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Controller\SpawnController.cs" />
      <Compile Include="Assets\Scripts\Controller\SpawnPool.cs" />
+     <Compile Include="Assets\Scripts\GUI\Arrow.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menu.cs" />
      <Compile Include="Assets\Scripts\Movement\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PointMovement.cs" />
+     <Compile Include="Assets\Scripts\Values\AudioValues.cs" />
      <Compile Include="Assets\Scripts\Values\MovementValues.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,21 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controller\DrawController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controller\DrawController.cs" Line="126" Column="18" />
-      <File FileName="Assets\Scripts\Movement\PlayerMovement.cs" Line="53" Column="2" />
-      <File FileName="Assets\Scripts\Controller\DrawController.cs" Line="137" Column="1" />
-      <File FileName="Assets\Scripts\Movement\PointMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Movement\EnemyMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controller\SpawnController.cs" Line="41" Column="30" />
+      <File FileName="Assets\Scripts\Controller\GameController.cs" Line="32" Column="33" />
+      <File FileName="Assets\Scripts\GUI\Arrow.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\Movement\PlayerMovement.cs" Line="45" Column="4" />
+      <File FileName="Assets\Scripts\Controller\DrawController.cs" Line="18" Column="32" />
+      <File FileName="Assets\Scripts\Controller\PlayerController.cs" Line="14" Column="33" />
+      <File FileName="Assets\Scripts\Controller\MovementController.cs" Line="25" Column="21" />
+      <File FileName="Assets\Scripts\Controller\InputController.cs" Line="8" Column="5" />
+      <File FileName="Assets\Scripts\GUI\Menu.cs" Line="37" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="32" />
-      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="58" />
-      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Controller\DrawController.cs" line="64" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

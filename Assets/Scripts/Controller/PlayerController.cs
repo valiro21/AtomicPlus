@@ -10,14 +10,22 @@ public class PlayerController : MonoBehaviour {
 		return MovementController.InitialRadius + Ring * MovementController.InterpolationRadius;
 	}
 
-	public static void Kill ( GameObject Player ) {
+	public static void Revive ( ) {
+		Player.renderer.enabled = true;
+		Player.GetComponent<PlayerMovement> ().Revive ();
+	}
+
+	public static void Kill ( ) {
+		Player.renderer.enabled = false;
+		Player.GetComponent<PlayerMovement> ().Dead = true;
 		GameController.GameOver ();
 	}
 
 	public static void DamagePlayer ( ) {
 		damage++;
+		//DrawController.DrawDamage ();
 		if (damage == 10)
-			Kill ( Player );
+			Kill ( );
 	}
 
 	void Awake () {

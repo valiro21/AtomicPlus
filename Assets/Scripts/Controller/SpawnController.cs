@@ -13,6 +13,8 @@ public class SpawnController : MonoBehaviour {
 	}
 
 	public static void SpawnPoint () {
+		RevivePoint ();
+
 		float DegreeAngle, RadianAngle, Radius;
 		long Ring = 4;
 		DegreeAngle = Random.Range (0f, 360f);
@@ -26,18 +28,27 @@ public class SpawnController : MonoBehaviour {
 		Point.rigidbody.velocity = new Vector3 (0f, 0f, 0f);
 		Point.transform.position = MovementController.ChangeToAngle (Radius, DegreeAngle);
 	}
-	
+
+	public static void RevivePoint () {
+		foreach ( Transform i in Point.transform )
+			i.renderer.enabled = true;
+	}
+
+	public static void DestroyPoint () {
+		foreach ( Transform i in Point.transform )
+			i.renderer.enabled = false;
+	}
 
 	void Awake () {
-		Point = Instantiate ( Resources.Load<GameObject> ("Point"), new Vector3 ( 0, 0, 50 ), Quaternion.Euler (0, 0, 0) ) as GameObject;
 		Atom = GameObject.Find ("Atom");
-		SpawnPoint ();
+		Point = Instantiate ( Resources.Load<GameObject> ("Point"), new Vector3 ( 0, 0, 50 ), Quaternion.Euler (0, 0, 0) ) as GameObject;
+		DestroyPoint ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if ((long)Time.time - prevtime > 0)
+		/*if ((long)Time.time - prevtime > 0)
 			Atom.GetComponent<SpawnPool>().SpawnObjects ( 30f, 10f, 3, (long)Time.time % 4 );
-		prevtime = (long)Time.time;
+		prevtime = (long)Time.time;*/
 	}
 }
