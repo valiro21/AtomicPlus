@@ -144,7 +144,7 @@ public class DrawController : MonoBehaviour {
 		}
 	}
 
-	void FixedUpdate () {
+	void Update () {
 		Offset = MovementController.LerpAngle (Offset, RotationDegreeSpeed);
 		ReDraw ( Offset );
 	}

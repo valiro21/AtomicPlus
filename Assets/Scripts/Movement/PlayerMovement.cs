@@ -45,13 +45,12 @@ public class PlayerMovement : MonoBehaviour {
 
 			//get radius changes
 			ChangeRingDirrection = InputController.GetInput ();
-			if ( ChangeRingDirrection != 0 )
-				if (ChangeRingDirrection < 0)
-					NewRadius = MovementController.MinimumRadius ( Radius );
-				else 
-					NewRadius = MovementController.MaximumRadius ( Radius );
 
-			Radius = MovementController.RadiusLerp (Radius, NewRadius, RadiusLerpSpeed);
+			Radius += ChangeRingDirrection * RadiusLerpSpeed * Time.deltaTime;
+			if ( Radius < InitialRadius )
+				Radius = InitialRadius;
+			else if ( Radius > FinalRadius )
+				Radius = FinalRadius;
 
 			//draw surrounding circle
 			//DrawController.DrawArc ( ref SurroundingCircle, DegreeAngle, DegreeAngle - 5f, Radius, 0.05f, 0.05f, Resources.Load ( "Materials/WhiteGUI" ) as Material );

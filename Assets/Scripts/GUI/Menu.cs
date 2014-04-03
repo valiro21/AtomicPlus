@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour {
 	static List<GameObject> TextList;
 	static int last = 0, i = 0;
 	static string[] DifficultyMode, GameplayMode, GameplayHelp, GameOverList;
+	static float MistakeRadius =0.1f;
 
 	public static void Alloc ( int x ) {
 		if ( TextList == null )
@@ -71,8 +72,7 @@ public class Menu : MonoBehaviour {
 	}
 
 	public static void Resize ( float Radius ) {
-		MenuObject.transform.localScale = new Vector3 ( Radius * 2f, Radius * 2f, Radius * 2f );
-		MenuObject.GetComponent<SphereCollider>().radius = Radius;
+		MenuObject.transform.localScale = new Vector3 ( Radius * 2f + MistakeRadius, Radius * 2f + MistakeRadius, Radius * 2f + MistakeRadius );
 	}
 
 	void OnMouseDown () {
@@ -109,33 +109,33 @@ public class Menu : MonoBehaviour {
 	void GameRender () {
 		Resize (MovementController.InitialRadius * 2 / 3);
 		Alloc (2);
-		CreateText ( "SCORE", 20, 0.6f);
-		CreateText ( (int)GameController.score, 60, 0f);
+		CreateText ( "SCORE", 15, 0.7f);
+		CreateText ( (int)GameController.score, 45, 0f);
 	}
 
 	void StartRender () {
 		Resize (MovementController.InitialRadius * 2 / 3);
 		Alloc (1);
-		CreateText ( "ATOMIC+", 20, 0f);
+		CreateText ( "ATOMIC+", 15, 0f);
 	}
 
 	void DifficultySelectRender () {
-		Resize (MovementController.InitialRadius + 3 * MovementController.InterpolationRadius / 2);
+		Resize (MovementController.InitialRadius + MovementController.InterpolationRadius);
 		Alloc (3);
-		CreateText ( "DIFFICULTY", 20, 0f);
-		CreateText ( DifficultyMode[i % 2], 50, 0.2f);
+		CreateText ( "DIFFICULTY", 10, 0.4f);
+		CreateText ( DifficultyMode[i % 2], 35, -0.2f);
 	}
 
 	void GameplaySelectRender  () {
-		Resize (MovementController.InitialRadius + 3 * MovementController.InterpolationRadius / 2);
+		Resize (MovementController.InitialRadius +  MovementController.InterpolationRadius);
 		Alloc (3);
-		CreateText ( "GAMEPLAY MODE", 20, 0.2f);
-		CreateText ( GameplayMode[i % 2], 50, 0f);
-		CreateText ( GameplayHelp[i % 2], 20, -0.2f);
+		CreateText ( "GAMEPLAY MODE", 15, 0.7f);
+		CreateText ( GameplayMode[i % 2], 35, 0f);
+		CreateText ( GameplayHelp[i % 2], 15, -0.6f);
 	}
 
 	void GameOverRender () {
-		Resize (MovementController.InitialRadius + 3 * MovementController.InterpolationRadius / 2);
+		Resize (MovementController.InitialRadius + MovementController.InterpolationRadius);
 		Alloc (4);
 		CreateText ( "GAMEOVER", 40, 0.5f );
 		CreateText ( "SCORE", 20, 0.2f);
