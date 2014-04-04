@@ -8,7 +8,7 @@ public class DrawController : MonoBehaviour {
 	public static long NumberOfArcs = 12;
 	static int last = 0, qlast = 0;
 	public static int  fr = 0, fx = 0;
-	public static float RenderAngle = 12f, MultiArcsWidth = 0.03f, MultiArcsHeigth =0.03f, RotationDegreeSpeed = 10f, Offset = 0f;
+	public static float RenderAngle = 8f, MultiArcsWidth = 0.03f, MultiArcsHeigth =0.03f, RotationDegreeSpeed = 10f, Offset = 0f;
 	static List<Vector3> tmp = new List<Vector3>();
 	static GameObject x;
 	static List<float> Angles;

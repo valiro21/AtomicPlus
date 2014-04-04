@@ -23,7 +23,7 @@ public class AudioController : MonoBehaviour {
 	
 	
 	
-	void Start () {
+	void Awake () {
 		GameObject ValuesGod = GameController.ValuesGod;
 		
 		DamageSound = ValuesGod.GetComponent<AudioValues> ().DamageSound;

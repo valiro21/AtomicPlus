@@ -1,15 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\OnlyHighscore.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Movement\PlayerMovement.cs">
     <Files>
       <File FileName="Assets\Scripts\Controller\GameController.cs" Line="28" Column="21" />
-      <File FileName="Assets\Scripts\Controller\OnlyInGame.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\Controller\OnlyInGame.cs" Line="14" Column="32" />
       <File FileName="Assets\Scripts\GUI\OnlyHighscore.cs" Line="9" Column="70" />
+      <File FileName="Assets\Scripts\GUI\Reset.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\GUI\Menu.cs" Line="122" Column="34" />
+      <File FileName="Assets\Scripts\Controller\SpawnController.cs" Line="90" Column="13" />
+      <File FileName="Assets\Scripts\Movement\PlayerMovement.cs" Line="28" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Movement\PlayerMovement.cs" line="66" />
+      <Breakpoint file="C:\Users\Vali\Documents\Atomic+\Assets\Scripts\Movement\PlayerMovement.cs" line="69" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

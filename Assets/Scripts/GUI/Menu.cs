@@ -80,7 +80,6 @@ public class Menu : MonoBehaviour {
 	void OnMouseDown () {
 		switch (GameController.mode) {
 			case 0:
-				AudioController.StartMenuMusic ();
 				GameController.mode = 1;
 				i = 0;
 				break;
@@ -172,6 +171,10 @@ public class Menu : MonoBehaviour {
 		GameOverList = new string[2];
 		GameOverList[0] = "PLAY AGAIN";
 		GameOverList[1] = "MAIN MENU";
+	}
+
+	void Start () {
+		AudioController.StartMenuMusic ();
 	}
 
 	public static void RightI () {
