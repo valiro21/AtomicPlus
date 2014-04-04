@@ -4,24 +4,31 @@ using System.Collections.Generic;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float dirrection = 1f, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius;
-	float DegreeAngle = 0f, NewRadius, ChangeRingDirrection = 0f, Radius;
+	public float dirrection = 1f, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius, DegreeAngle = 0f, Radius;
+	float NewRadius, ChangeRingDirrection = 0f;
 	List<GameObject> SurroundingCircle;
 	public bool Dead = true;
+	static int x = -1;
 
 	public void Revive () {
 		DegreeAngle = 0f;
 		Radius = NewRadius = InitialRadius;
 		Dead = false;
+		x = -1;
 	}
+
+
 
 	void OnCollisionEnter ( Collision collision ) {
 		if (GameController.mode == 3) {
 			if (collision.collider.tag == "Point") {
+				AudioController.GetPoint ();
 				dirrection *= -1f;
+				PlayerController.HealPlayer ();
 				GameController.GetPoint ();
 				SpawnController.SpawnPoint ();
 			} else if (collision.collider.tag == "Bullet") {
+				AudioController.Damage ();
 				PlayerController.DamagePlayer ();
 			}
 		}
@@ -37,9 +44,9 @@ public class PlayerMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if ( !Dead ) {
-			DegreeAngle = MovementController.LerpAngle ( DegreeAngle, dirrection * DegreesPerSecond );
+	public void Move () {
+		if ( !Dead && GameController.mode == 3 ) {
+			DegreeAngle = MovementController.RepairAngle ( DegreeAngle + dirrection * DegreesPerSecond * Time.deltaTime );
 
 			transform.position = MovementController.ChangeToAngle (Radius, DegreeAngle);
 
@@ -53,7 +60,16 @@ public class PlayerMovement : MonoBehaviour {
 				Radius = FinalRadius;
 
 			//draw surrounding circle
-			//DrawController.DrawArc ( ref SurroundingCircle, DegreeAngle, DegreeAngle - 5f, Radius, 0.05f, 0.05f, Resources.Load ( "Materials/WhiteGUI" ) as Material );
+			PlayerController.Draw = true;
+			DrawController.DrawArc ( ref SurroundingCircle, DegreeAngle, DegreeAngle - 5f, Radius, 0.05f, 0.05f, Resources.Load ( "Materials/WhiteGUI" ) as Material );
+			PlayerController.Draw = false;
+		}
+		else {
+			if ( SurroundingCircle != null ) {
+				foreach ( GameObject i  in SurroundingCircle )
+					i.GetComponent<LineRenderer>().renderer.enabled = false;
+				SurroundingCircle = null;
+			}
 		}
 	}
 }

@@ -38,7 +38,9 @@ public class MovementController : MonoBehaviour {
 	
 	public static Vector3 ChangeToAngle (float Radius, float DegreeAngle ) {
 		float RadianAngle = DegreeAngle * Mathf.PI / 180f;
-		return new Vector3 (GameController.Ring.x - Radius * Mathf.Cos (RadianAngle), GameController.Ring.y + Radius * Mathf.Sin (RadianAngle), GameController.Ring.z);
+		float x = ((long)((GameController.Ring.x - Radius * Mathf.Cos (RadianAngle)) * 10000f)) / 10000f;
+		float y = ((long)((GameController.Ring.y + Radius * Mathf.Sin (RadianAngle)) * 10000f)) / 10000f;
+		return new Vector3 (x, y, GameController.Ring.z);
 	}
 
 	public static float RepairAngle ( float DegreeAngle ) {

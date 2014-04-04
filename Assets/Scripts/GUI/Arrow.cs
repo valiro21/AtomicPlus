@@ -4,6 +4,7 @@ using System.Collections;
 public class Arrow : MonoBehaviour {
 
 	public float dirrection = 0;
+	bool ienable = false;
 
 	void OnMouseDown () {
 		if ( dirrection > 0 )
@@ -13,13 +14,31 @@ public class Arrow : MonoBehaviour {
 	}
 
 	void Update () {
-		if (GameController.mode == 3)
-			transform.renderer.enabled = false;
-		else
-			transform.renderer.enabled = true;
-		if (dirrection > 0)
-			gameObject.transform.position = MovementController.ChangeToAngle ( MovementController.FinalRadius, 180f );
-		else
-			gameObject.transform.position = MovementController.ChangeToAngle ( MovementController.FinalRadius, 0f );
+		if (GameController.mode == 3 || GameController.mode == 0) {
+			foreach ( Transform i in transform )
+				i.renderer.enabled = false;
+			ienable = false;
+		}
+		else {
+			foreach ( Transform i in transform )
+				i.renderer.enabled = true;
+			ienable = true;
+		}
+
+		if ( gameObject.name == "LeftArrow" || gameObject.name == "RightArrow" ) {
+			if ( GameController.mode != 3 &&  GameController.mode != 0 )
+				if (dirrection > 0)
+					gameObject.transform.position = MovementController.ChangeToAngle ( MovementController.FinalRadius + 0.1f, 180f );
+				else
+					gameObject.transform.position = MovementController.ChangeToAngle ( MovementController.FinalRadius + 0.1f, 0f );
+			else
+				gameObject.transform.position = new Vector3 ( 0, 0, 0 );
+
+			if ( ienable )
+				if ( dirrection > 0 && Input.GetKey ( KeyCode.RightArrow ) )
+					Menu.RightI ();
+				else if ( dirrection < 0 && Input.GetKey ( KeyCode.LeftArrow ) )
+					Menu.LeftI ();
+		}
 	}
 }

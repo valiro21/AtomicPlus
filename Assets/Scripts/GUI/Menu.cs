@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Menu : MonoBehaviour {
-
-	static GameObject MenuObject;
+	public static float Radius;
+	public static GameObject MenuObject;
 	static List<GameObject> TextList;
 	static int last = 0, i = 0;
 	static string[] DifficultyMode, GameplayMode, GameplayHelp, GameOverList;
@@ -16,9 +16,10 @@ public class Menu : MonoBehaviour {
 
 		last = 0;
 		for ( int i = 0; i < x; i++ ) {
-			if ( i > TextList.Count - 1 )
+			if ( i > TextList.Count - 1 ) {
 				TextList.Add ( new GameObject ( "Text" ) );
-			TextList[i].AddComponent<TextMesh>();
+				TextList[i].AddComponent<TextMesh>();
+			}
 			TextList[i].renderer.enabled = false;
 		}
 
@@ -71,23 +72,25 @@ public class Menu : MonoBehaviour {
 		last ++;
 	}
 
-	public static void Resize ( float Radius ) {
-		MenuObject.transform.localScale = new Vector3 ( Radius * 2f + MistakeRadius, Radius * 2f + MistakeRadius, Radius * 2f + MistakeRadius );
+	public static void Resize ( float radius ) {
+		Radius = radius;
+		MenuObject.transform.localScale = new Vector3 ( radius * 2f + MistakeRadius, radius * 2f + MistakeRadius, radius * 2f + MistakeRadius );
 	}
 
 	void OnMouseDown () {
 		switch (GameController.mode) {
 			case 0:
+				AudioController.StartMenuMusic ();
 				GameController.mode = 1;
 				i = 0;
 				break;
 			case 1:
 				GameController.PlayMode = i;
 				i = 0;
-				GameController.mode = 2;
+			GameController.mode = 2;
 				break;
 			case 2:
-				GameController.Difficulty = i;
+				GameController.Difficulty = i + 1;
 				i = 0;
 				GameController.StartGame ();
 				break;
@@ -115,8 +118,10 @@ public class Menu : MonoBehaviour {
 
 	void StartRender () {
 		Resize (MovementController.InitialRadius * 2 / 3);
-		Alloc (1);
-		CreateText ( "ATOMIC+", 15, 0f);
+		Alloc (3);
+		CreateText ( "ATOMIC+", 19, 0.2f);
+		CreateText ( "HIGHSCORE", 12, -0.6f );
+		CreateText ( PlayerPrefs.GetInt ("Highscore"), 15, -0.9f );
 	}
 
 	void DifficultySelectRender () {
@@ -128,19 +133,25 @@ public class Menu : MonoBehaviour {
 
 	void GameplaySelectRender  () {
 		Resize (MovementController.InitialRadius +  MovementController.InterpolationRadius);
-		Alloc (3);
+		if ( i % 2 == 0 )
+			Alloc (3);
+		else
+			Alloc (4);
+
 		CreateText ( "GAMEPLAY MODE", 15, 0.7f);
 		CreateText ( GameplayMode[i % 2], 35, 0f);
-		CreateText ( GameplayHelp[i % 2], 15, -0.6f);
+		CreateText ( GameplayHelp[0], 15, -0.6f);
+		if ( i % 2 > 0 )
+			CreateText ( GameplayHelp[1], 9, -0.9f);
 	}
 
 	void GameOverRender () {
 		Resize (MovementController.InitialRadius + MovementController.InterpolationRadius);
 		Alloc (4);
-		CreateText ( "GAMEOVER", 40, 0.5f );
-		CreateText ( "SCORE", 20, 0.2f);
-		CreateText ( (int)GameController.score, 50, 0f);
-		CreateText ( GameOverList[i % 2], 30, -0.2f);
+		CreateText ( "GAMEOVER", 30, 1f );
+		CreateText ( "SCORE", 15, 0.5f);
+		CreateText ( (int)GameController.score, 40, -0.2f);
+		CreateText ( GameOverList[i % 2], 20, -0.9f);
 	}
 
 	// Use this for initialization
@@ -151,8 +162,8 @@ public class Menu : MonoBehaviour {
 		GameplayMode[1] = "MANUAL";
 
 		GameplayHelp = new string[2];
-		GameplayHelp[0] = "TOUCH = RADIUS";
-		GameplayHelp[1] = "TOUCH = RADIUS / MIDDLE = DIRECTION";
+		GameplayHelp[0] = "SPACEBAR = RADIUS";
+		GameplayHelp[1] = "CLICK IN THE MIDDLE = DIRECTION";
 
 		DifficultyMode = new string[2];
 		DifficultyMode[0] = "NORMAL";
@@ -160,7 +171,7 @@ public class Menu : MonoBehaviour {
 
 		GameOverList = new string[2];
 		GameOverList[0] = "PLAY AGAIN";
-		GameOverList[1] = "LEVEL SELECT";
+		GameOverList[1] = "MAIN MENU";
 	}
 
 	public static void RightI () {
@@ -177,6 +188,7 @@ public class Menu : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		MenuObject = gameObject;
 		switch (GameController.mode) {
 		case 0:
 			StartRender ();

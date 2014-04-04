@@ -12,6 +12,7 @@ public class AudioPool : MonoBehaviour {
 	public static void SetBackgroundMusic ( AudioClip Sound ) {
 		BackgroundMusic.Stop ( );
 		BackgroundMusic.clip = Sound;
+		BackgroundMusic.loop = true;
 		BackgroundMusic.Play ( );
 	}
 	

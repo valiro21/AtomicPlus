@@ -46,22 +46,32 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\003 Drawing Lines\src\LinesGL.cs" />
+     <Compile Include="Assets\003 Drawing Lines\src\LinesGR.cs" />
+     <Compile Include="Assets\003 Drawing Lines\src\LinesLR.cs" />
      <Compile Include="Assets\Scripts\Controller\AudioController.cs" />
      <Compile Include="Assets\Scripts\Controller\AudioPool.cs" />
+     <Compile Include="Assets\Scripts\Controller\BackgroundController.cs" />
+     <Compile Include="Assets\Scripts\Controller\DamageController.cs" />
      <Compile Include="Assets\Scripts\Controller\DrawController.cs" />
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\InputController.cs" />
      <Compile Include="Assets\Scripts\Controller\MovementController.cs" />
+     <Compile Include="Assets\Scripts\Controller\OnlyInGame.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Controller\SpawnController.cs" />
      <Compile Include="Assets\Scripts\Controller\SpawnPool.cs" />
      <Compile Include="Assets\Scripts\GUI\Arrow.cs" />
+     <Compile Include="Assets\Scripts\GUI\Close.cs" />
      <Compile Include="Assets\Scripts\GUI\Menu.cs" />
+     <Compile Include="Assets\Scripts\GUI\OnlyHighscore.cs" />
+     <Compile Include="Assets\Scripts\GUI\Reset.cs" />
      <Compile Include="Assets\Scripts\Movement\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PointMovement.cs" />
      <Compile Include="Assets\Scripts\Values\AudioValues.cs" />
      <Compile Include="Assets\Scripts\Values\MovementValues.cs" />
+     <None Include="Assets\003 Drawing Lines\src\BlackLine.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

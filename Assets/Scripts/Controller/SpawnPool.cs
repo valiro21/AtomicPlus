@@ -3,32 +3,31 @@ using System.Collections;
 
 public class SpawnPool : MonoBehaviour {
 
-	public float NumerOfObjectsInPool;
-	public Object PoolObject;
-	public float SpawnEnableLevel;
+	public static float NumerOfObjectsInPool = 200;
+	public static Object PoolObject = Resources.Load ( "Bullet" );
 	
-	GameObject[] PoolObjects;
+	static GameObject[] PoolObjects;
 	
 
-	public bool AreMonstersAlive () {
+	public static bool AreMonstersAlive () {
 		for ( long i = 0; i < (int)NumerOfObjectsInPool; i++)
 			if ( PoolObjects[i].active == true )
 				return true;
 		return false;
 	}
 
-	public void SpawnObject ( float Degree, long mode ) {
+	public static void SpawnObject ( float Degree, long mode ) {
 		for ( long i = 0; i < (int)NumerOfObjectsInPool; i++) {
 			if ( PoolObjects[i].active == false ) {
-				PoolObjects[i].transform.position = MovementController.ChangeToAngle ( gameObject.transform.localScale.x, Degree );
+				PoolObjects[i].transform.position = MovementController.ChangeToAngle ( Menu.Radius, Degree );
 				PoolObjects[i].active = true;
-				PoolObjects[i].GetComponent<EnemyMovement>().Reset( gameObject.transform.localScale.x, Degree, mode );
+				PoolObjects[i].GetComponent<EnemyMovement>().Reset( Menu.Radius, Degree, mode );
 				break;
 			}
 		}
 	}
 
-	public void SpawnObjects ( float Degree, float OffsetDegree, long number, long mode) {
+	public static void SpawnObjects ( float Degree, float OffsetDegree, long number, long mode) {
 		float MinusOffsetAngle = Degree - OffsetDegree, PlusOffsetAngle = Degree + OffsetDegree;
 		if (MinusOffsetAngle < 0f)
 			MinusOffsetAngle += 360f;
@@ -37,7 +36,7 @@ public class SpawnPool : MonoBehaviour {
 
 		if (number % 2 > 0)
 			SpawnObject ( Degree, mode );
-		if ( number > 2 ) {
+		if ( number >= 2 ) {
 			SpawnObject ( MinusOffsetAngle, mode );
 			SpawnObject ( PlusOffsetAngle, mode );
 		}

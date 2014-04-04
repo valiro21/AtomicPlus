@@ -9,13 +9,26 @@ public class GameController : MonoBehaviour {
 	public static int mode = 0, Difficulty = 0, GameMode = 0, score = 0, level = 0, PlayMode = 0; 
 	public static bool Highscore = false;
 
-	public static void GameOver () {
+	public static void GameOver ( ) {
 		Highscore = false;
 		if ( score > PlayerPrefs.GetInt ( "Highscore" ) ) {
 			PlayerPrefs.SetInt ("Highscore", score);
 			Highscore = true;
 		}
-		mode = 5;
+		mode = 4;
+		PlayerController.Kill ();
+		SpawnController.DestroyPoint ();
+		AudioController.StartMenuMusic ();
+	}
+
+	public static void GameOver ( int NextMode ) {
+		Highscore = false;
+		if ( score > PlayerPrefs.GetInt ( "Highscore" ) ) {
+			PlayerPrefs.SetInt ("Highscore", score);
+			Highscore = true;
+		}
+		mode = NextMode;
+		PlayerController.Kill ();
 		SpawnController.DestroyPoint ();
 		AudioController.StartMenuMusic ();
 	}
@@ -29,7 +42,9 @@ public class GameController : MonoBehaviour {
 		//SpawnController.Spawn = Difficulty + 1;
 		AudioController.StartGameMusic ();
 		PlayerController.Revive ();
+		SpawnController.Reset ();
 		SpawnController.SpawnPoint ();
+		score = 1;
 		mode = 3;
 	}
 

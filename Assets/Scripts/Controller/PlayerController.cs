@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour {
 
 	public static long damage = 0;
 	public static GameObject Player;
+	public static float Angle;
+	public static bool Draw = false;
 
 	public static float GetRadiusOfRing ( long Ring ) {
 		return MovementController.InitialRadius + Ring * MovementController.InterpolationRadius;
@@ -12,20 +14,44 @@ public class PlayerController : MonoBehaviour {
 
 	public static void Revive ( ) {
 		Player.renderer.enabled = true;
+		damage = 0;
 		Player.GetComponent<PlayerMovement> ().Revive ();
 	}
 
 	public static void Kill ( ) {
 		Player.renderer.enabled = false;
+		Player.transform.position = new Vector3 (0, 0, 0);
 		Player.GetComponent<PlayerMovement> ().Dead = true;
-		GameController.GameOver ();
 	}
+
+	public static float PlayerCharacterRadius () {
+		return Player.transform.localScale.x / 2f;
+	}
+
+	/*public static float Contains ( Vector3 x ) {
+		if ( Vector3.Distance )
+	}*/
 
 	public static void DamagePlayer ( ) {
 		damage++;
 		//DrawController.DrawDamage ();
 		if (damage == 10)
-			Kill ( );
+			GameController.GameOver ();
+	}
+
+	public static void MovePlayer () {
+		Player.GetComponent<PlayerMovement> ().Move ();
+	}
+
+	public static void HealPlayer ( ) {
+		damage--;
+		//DrawController.DrawDamage ();
+		if (damage < 0)
+			damage = 0;
+	}
+
+	public static float GetRadius () {
+		return Player.GetComponent<PlayerMovement>().Radius;
 	}
 
 	void Awake () {
@@ -34,5 +60,12 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if ( GameController.mode == 3 )
+			Angle = Player.GetComponent<PlayerMovement> ().DegreeAngle;
+
+		if (damage < 0)
+			damage = 0;
+		else if (damage > 10)
+			damage = 10;
 	}
 }
