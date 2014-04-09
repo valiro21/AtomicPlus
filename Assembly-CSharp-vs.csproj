@@ -46,9 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\003 Drawing Lines\src\LinesGL.cs" />
-     <Compile Include="Assets\003 Drawing Lines\src\LinesGR.cs" />
-     <Compile Include="Assets\003 Drawing Lines\src\LinesLR.cs" />
      <Compile Include="Assets\Scripts\Controller\AudioController.cs" />
      <Compile Include="Assets\Scripts\Controller\AudioPool.cs" />
      <Compile Include="Assets\Scripts\Controller\BackgroundController.cs" />
@@ -69,9 +66,9 @@
      <Compile Include="Assets\Scripts\Movement\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PointMovement.cs" />
+     <Compile Include="Assets\Scripts\Values\Angle.cs" />
      <Compile Include="Assets\Scripts\Values\AudioValues.cs" />
      <Compile Include="Assets\Scripts\Values\MovementValues.cs" />
-     <None Include="Assets\003 Drawing Lines\src\BlackLine.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

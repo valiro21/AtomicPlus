@@ -16,10 +16,10 @@ public class SpawnPool : MonoBehaviour {
 		return false;
 	}
 
-	public static void SpawnObject ( float Degree, long mode ) {
+	public static void SpawnObject ( Angle Degree, long mode ) {
 		for ( long i = 0; i < (int)NumerOfObjectsInPool; i++) {
 			if ( PoolObjects[i].active == false ) {
-				PoolObjects[i].transform.position = MovementController.ChangeToAngle ( Menu.Radius, Degree );
+				PoolObjects[i].transform.position = Degree.PointByRadius ( Menu.Radius );
 				PoolObjects[i].active = true;
 				PoolObjects[i].GetComponent<EnemyMovement>().Reset( Menu.Radius, Degree, mode );
 				break;
@@ -27,12 +27,8 @@ public class SpawnPool : MonoBehaviour {
 		}
 	}
 
-	public static void SpawnObjects ( float Degree, float OffsetDegree, long number, long mode) {
-		float MinusOffsetAngle = Degree - OffsetDegree, PlusOffsetAngle = Degree + OffsetDegree;
-		if (MinusOffsetAngle < 0f)
-			MinusOffsetAngle += 360f;
-		if (PlusOffsetAngle > 360f)
-			PlusOffsetAngle -= 360f;
+	public static void SpawnObjects ( Angle Degree, float OffsetDegree, long number, long mode) {
+		Angle MinusOffsetAngle = Degree - OffsetDegree, PlusOffsetAngle = Degree + OffsetDegree;
 
 		if (number % 2 > 0)
 			SpawnObject ( Degree, mode );

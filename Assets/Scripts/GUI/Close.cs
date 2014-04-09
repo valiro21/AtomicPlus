@@ -7,8 +7,6 @@ public class Close : MonoBehaviour {
 		if (GameController.mode != 0)
 			GameController.GameOver (0);
 		else
-			Application.Quit ();
-
-
+			System.Diagnostics.Process.GetCurrentProcess().Kill();
 	}
 }

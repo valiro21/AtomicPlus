@@ -6,7 +6,7 @@ public class SpawnController : MonoBehaviour {
 	static long LastRing = 4, Wait = 1;
 	public static float OutOfBounds = 12f;
 	static int minplaces, maxplaces, pscore, nplaces, mode, number, psecond, nrmin;
-	static float[] place = new float[5];
+	static Angle[] place = new Angle[5];
 
 	public static void ResetPoint () {
 		LastRing = 4;
@@ -18,18 +18,17 @@ public class SpawnController : MonoBehaviour {
 		RevivePoint ();
 
 		BackgroundController.ChangeBackground ();
-		float DegreeAngle, RadianAngle, Radius;
+		float Radius;
 		long Ring = 4;
-		DegreeAngle = Random.Range (0f, 360f);
+		Angle DegreeAngle = Random.Range (0f, 360f);
 		while ( Ring == 4 || Ring == LastRing )
 			Ring = (long)Random.Range ( 0f, 4f );
 
 		Radius = PlayerController.GetRadiusOfRing (Ring);
-		RadianAngle = DegreeAngle * Mathf.PI / 180f;
 
 		LastRing = Ring;
 		Point.rigidbody.velocity = new Vector3 (0f, 0f, 0f);
-		Point.transform.position = MovementController.ChangeToAngle (Radius, DegreeAngle);
+		Point.transform.position = DegreeAngle.PointByRadius (Radius);
 	}
 
 	public static void RevivePoint () {
@@ -57,7 +56,7 @@ public class SpawnController : MonoBehaviour {
 
 	public static void MoveByOffset ( float OffsetDegree ) {
 		for ( int i = 0; i < nplaces; i++ )
-			place[i] = MovementController.RepairAngle ( place[i] + OffsetDegree );
+			place[i] += OffsetDegree;
 	}
 
 	void Awake () {
@@ -90,10 +89,10 @@ public class SpawnController : MonoBehaviour {
 				Wait = 2;
 				pscore = GameController.score;
 	
-				float Angle = PlayerController.Angle;
+				Angle Angle = PlayerController.Angle;
 				nplaces = Random.Range (minplaces, maxplaces + 1);
 				for ( int i = 0; i < nplaces; i++ )
-					place[i] = MovementController.RepairAngle (Angle + 360f/(float)nplaces * i);
+					place[i] = Angle + 360f/(float)nplaces * i;
 
 
 				mode = Random.Range ( 0, 4 );

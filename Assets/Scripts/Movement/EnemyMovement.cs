@@ -3,10 +3,14 @@ using System.Collections;
 
 public class EnemyMovement : MonoBehaviour {
 	public float StaraightSpeed = 1.0f;
-	public float PulsateSpeed = 0.7f, PulsateSlowDownRadius = 1.5f, PulsateSlowDownSpeed = 0.4f , PulsateInterpolationRadius = 4f;
-	public float DrunkSpeed = 0.5f, DrunkDegreesPerSecond = 10f, DrunkMovingAngle = 10f;
-	public float SpiralSpeed = 0.1f, SpiralDegreesPerSecond = 70f;
-	float EndOfRadius, DrunkOffsetAngle = 0f, DrunksLocalMovingRatio = 0f, DegreeAngle = 0f;
+	public float PulsateSpeed = 0.7f, PulsateSlowDownRadius = 1.5f, PulsateSlowDownSpeed = 0.4f, PulsateInterpolationRadius = 4f;
+	public float DrunkSpeed = 0.5f, DrunkDegreesPerSecond = 10;
+	public float SpiralSpeed = 0.1f;
+
+	public Angle DrunkMovingAngle = 10f, SpiralDegreesPerSecond = 70f;
+
+	Angle DrunkOffsetAngle = 0f, DegreeAngle = 0f, DegreeAngleTmp;
+	float EndOfRadius, DrunksLocalMovingRatio = 0f;
 	long i = 0;
 	public long mode;
 	static Vector3 MistakeVector = new Vector3 ( 0, 0, 0f );
@@ -29,7 +33,7 @@ public class EnemyMovement : MonoBehaviour {
 	void Pulsate () {
 		if (Radius == NewRadius) {
 			if ( i % 2 == 0 )
-				NewRadius += PulsateInterpolationRadius ;
+				NewRadius += PulsateInterpolationRadius;
 			else
 				NewRadius += PulsateSlowDownRadius;
 			i++;
@@ -39,35 +43,36 @@ public class EnemyMovement : MonoBehaviour {
 			Radius = MovementController.ConstantLerp ( Radius, NewRadius, PulsateSlowDownSpeed );
 		else
 			Radius = MovementController.ConstantLerp ( Radius, NewRadius, PulsateSpeed  );
-		transform.position = MovementController.ChangeToAngle ( Radius, DegreeAngle );
+		transform.position = DegreeAngle.PointByRadius ( Radius );
 		transform.position += MistakeVector;
 
 	}
 
 	void Spiral () {
-		DegreeAngle = MovementController.LerpAngle ( DegreeAngle, SpiralDegreesPerSecond );
+		DegreeAngle += Time.deltaTime * SpiralDegreesPerSecond;
 
 
 		Radius = MovementController.ConstantLerp ( Radius, EndOfRadius, SpiralSpeed  );
-		transform.position = MovementController.ChangeToAngle ( Radius, DegreeAngle );
+		transform.position = DegreeAngle.PointByRadius ( Radius );
 		transform.position += MistakeVector;
 	}
 
 	void Drunk () {
-		DrunkOffsetAngle = MovementController.LerpAngle ( DrunkOffsetAngle, DrunkDegreesPerSecond );
+		DrunkOffsetAngle += Time.deltaTime * DrunkDegreesPerSecond;
 
 		Radius = MovementController.ConstantLerp ( Radius, EndOfRadius, DrunkSpeed  );
-		transform.position = MovementController.ChangeToAngle ( Radius, DegreeAngle + DrunksLocalMovingRatio / Radius * Mathf.Sin ( DrunkOffsetAngle ) );
+		DegreeAngleTmp = DegreeAngle + DrunksLocalMovingRatio / Radius * DrunkOffsetAngle.Sin ();
+		transform.position = DegreeAngleTmp.PointByRadius ( Radius );
 		transform.position += MistakeVector;
 	}
 
 	void Straight () {
 		Radius = MovementController.ConstantLerp ( Radius, EndOfRadius, StaraightSpeed  );
-		transform.position = MovementController.ChangeToAngle ( Radius, DegreeAngle );
+		transform.position = DegreeAngle.PointByRadius ( Radius );
 		transform.position += MistakeVector;
 	}
 
-	public void Reset ( float radius,  float degree, long Mode ) {
+	public void Reset ( float radius,  Angle degree, long Mode ) {
 		EndOfRadius = SpawnController.OutOfBounds;
 		mode = Mode;
 		DegreeAngle = degree;

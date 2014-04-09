@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerMovement : MonoBehaviour {
-
-	public float dirrection = 1f, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius, DegreeAngle = 0f, Radius;
+	public Angle DegreeAngle = 0f;
+	public float dirrection = 1f, RadiusLerpSpeed, DegreesPerSecond, InitialRadius, InterpolationRadius, FinalRadius, Radius;
 	float NewRadius, ChangeRingDirrection = 0f;
 	List<GameObject> SurroundingCircle;
 	public bool Dead = true;
@@ -46,9 +46,9 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	public void Move () {
 		if ( !Dead && GameController.mode == 3 ) {
-			DegreeAngle = MovementController.RepairAngle ( DegreeAngle + dirrection * DegreesPerSecond * Time.deltaTime );
+			DegreeAngle += dirrection * DegreesPerSecond * Time.deltaTime;
 
-			transform.position = MovementController.ChangeToAngle (Radius, DegreeAngle);
+			transform.position = DegreeAngle.PointByRadius (Radius);
 
 			//get radius changes
 			ChangeRingDirrection = InputController.GetInput ();
@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour {
 
 			//draw surrounding circle
 			PlayerController.Draw = true;
-			DrawController.DrawArc ( ref SurroundingCircle, DegreeAngle, DegreeAngle - 5f, Radius, 0.05f, 0.05f, Resources.Load ( "Materials/WhiteGUI" ) as Material );
+			//DrawController.DrawArc ( ref SurroundingCircle, DegreeAngle, DegreeAngle - 5f, Radius, 0.05f, 0.05f, Resources.Load ( "Materials/WhiteGUI" ) as Material );
 			PlayerController.Draw = false;
 		}
 		else {

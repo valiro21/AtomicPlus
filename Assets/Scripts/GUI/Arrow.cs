@@ -28,9 +28,9 @@ public class Arrow : MonoBehaviour {
 		if ( gameObject.name == "LeftArrow" || gameObject.name == "RightArrow" ) {
 			if ( GameController.mode != 3 &&  GameController.mode != 0 )
 				if (dirrection > 0)
-					gameObject.transform.position = MovementController.ChangeToAngle ( MovementController.FinalRadius + 0.1f, 180f );
+					gameObject.transform.position = Angle.PointByRadius ( 180f, MovementController.FinalRadius + 0.1f);
 				else
-					gameObject.transform.position = MovementController.ChangeToAngle ( MovementController.FinalRadius + 0.1f, 0f );
+					gameObject.transform.position = Angle.PointByRadius ( 0f, MovementController.FinalRadius + 0.1f);
 			else
 				gameObject.transform.position = new Vector3 ( 0, 0, 0 );
 
