@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
 
@@ -7,6 +8,29 @@ public class PlayerController : MonoBehaviour {
 	public static GameObject Player;
 	public static float Angle;
 	public static bool Draw = false;
+
+	static float V3Distance ( Vector3 x, Vector3 y ) {
+		x.z = 0f; y.z = 0f;
+		return Vector3.Distance (x, y);
+	}
+
+	public static void AddToAngle (int i, float R) {
+		float Off = 1f, dirrection = Player.GetComponent<PlayerMovement>().dirrection;
+		float r = PlayerCharacterRadius() * 2 + 0.03f;
+		float dx = V3Distance (GameController.Ring, Player.transform.position);
+		if (r + R > dx) {
+			float cos =  (R*R + dx*dx - r * r)/(2 * R * dx);
+			Angle k = new Angle ( Mathf.Acos (cos) , 0);
+			Angle k1 = Angle - k + dirrection * Off, k2 = Angle + k + dirrection * Off;
+
+			DrawController.AddToAngles (ref k1, i);
+			DrawController.AddToAngles (ref k2, i);
+		}
+	}
+
+	public static bool IsDead () {
+		return Player.GetComponent<PlayerMovement> ().Dead;
+	}
 
 	public static float GetRadiusOfRing ( long Ring ) {
 		return MovementController.InitialRadius + Ring * MovementController.InterpolationRadius;
@@ -62,7 +86,6 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		if ( GameController.mode == 3 )
 			Angle = Player.GetComponent<PlayerMovement> ().DegreeAngle;
-
 		if (damage < 0)
 			damage = 0;
 		else if (damage > 10)

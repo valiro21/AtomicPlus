@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Angle {
-	float degree;
-	float radian;
+	public float degree;
+	public float radian;
 	static Angle FULL = new Angle(360f, false);
 
 	void RepairAngle ( ) {
@@ -18,17 +18,34 @@ public class Angle {
 		radian = degree * Mathf.PI / 180f;
 	}
 
-	Angle () {
+	void RepairRadian ( ) {
+		long ratio = (long)(radian / (2 * Mathf.PI));
+		radian -= ratio * Mathf.PI;
+		
+		if (radian < 0f)
+			radian += 2 * Mathf.PI;
+		if (radian > 2 * Mathf.PI)
+			radian -= 2 * Mathf.PI;
+		
+		 degree = radian / Mathf.PI * 180f;
+	}
+
+	public Angle () {
 		degree = 0f;
 		radian = 0f;
 	}
 
-	Angle (float a) {
+	public Angle (float a) {
 		degree = a;
 		RepairAngle ();
 	}
 
-	Angle (float a, bool f) {
+	public Angle (float a, int i) {
+		radian = a + i * Mathf.PI;
+		RepairRadian ();
+	}
+
+	public Angle (float a, bool f) {
 		degree = a;
 		if ( f )
 			RepairAngle ();

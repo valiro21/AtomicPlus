@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class DrawController : MonoBehaviour {
-	public static int TotalQ = 100;
-	public static int NumberOfCalls = 50;
+	public static int TotalQ = 200;
+	public static int NumberOfCalls = 60;
 	static List<Angle>[] Angles = new List<Angle>[12];
 	static int[] AnglesLast = new int[11];
 	static List<float> Radiuses = new List<float>();
@@ -12,12 +12,14 @@ public class DrawController : MonoBehaviour {
 	static int qlast;
 	static Angle Offset = 0, RotationDegreeSpeed = 20f;
 
-	static void AddToAngles ( ref Angle x, int i ) {
+	public static void AddToAngles ( ref Angle x, int i ) {
 		if (Angles [i] == null)
 			Angles[i] = new List<Angle>();
 
-		if ( AnglesLast[i] < Angles[i].Count - 1 )
-			Angles[i][AnglesLast[i]++] = x;
+		if ( AnglesLast[i] < Angles[i].Count - 1 ) {
+			Angles[i][AnglesLast[i]] = x;
+			AnglesLast[i]++;
+		}
 		else {
 			Angles[i].Add ( x );
 			AnglesLast[i]++;
@@ -127,19 +129,40 @@ public class DrawController : MonoBehaviour {
 	void Update () {
 		Offset += RotationDegreeSpeed * Time.deltaTime;
 		qlast = 0;
-		GetCollisions ();
+
 		for (int i = 0; i < 4; i++) {
-			DrawMultiArcCircle ( i, Offset, Radiuses[i], 12, 0.05f, 0.05f, Resources.Load ("Materials/MovingRings") as Material );
+			DrawMultiArcCircle ( i, Offset, Radiuses[i], 12, 0.04f, 0.04f, Resources.Load ("Materials/MovingRings") as Material );
 		}
+
+		if ( !PlayerController.IsDead () )
+			DrawArcColliders ( ref Angles[4], AnglesLast[4], 0f, 359.9f, 1f, PlayerController.GetRadius(), 0.05f, 0.05f, Resources.Load ( "Materials/WhiteGUI" ) as Material );
 
 		ReDrawFromQueue ();
 	}
 
 	void FixedUpdate () {
+		PlayerController.MovePlayer ();
+		Radiuses [4] = PlayerController.GetRadius ();
+		for (int i = 0; i < Radiuses.Count; i++) {
+			if ( Angles[i] == null )
+				Angles[i] = new List<Angle>();
+			
+			float radius = Radiuses[i];
+			AnglesLast[i] = 0;
 
+			PlayerController.AddToAngle ( i, radius );
+			SpawnController.AddToAngle ( i, radius );
+			if ( AnglesLast[i] > 2 ) {
+				if ( Angles[i][0] < Angles[i][1] && Angles[i][0] > Angles[i][2]) {
+					Angle tmp;
+					tmp = Angles[i][0]; Angles[i][0] = Angles[i][2]; Angles[i][2] = tmp;
+					tmp = Angles[i][1]; Angles[i][1] = Angles[i][3]; Angles[i][3] = tmp;
+				}
+			}
+		}
 	}
 
-	void GetCollisions () {
+	/*void GetCollisions () {
 		Angle FixedRenderAngle, k;
 		RaycastHit hit;
 		Vector3 p1, p2;
@@ -160,6 +183,7 @@ public class DrawController : MonoBehaviour {
 				pj = j - FixedRenderAngle;
 				p1 = pj.PointByRadius ( radius );
 				p2 = j.PointByRadius ( radius );
+				Debug.DrawRay ( p1, p2 - p1, Color.cyan, 3f );
 				if ( Physics.Raycast ( p1, p2 - p1, out hit, Vector3.Distance ( p1, p2 ) ) ) {
 					d = Vector3.Distance ( p1, p2 );
 					d1 = Vector3.Distance ( p1,hit.point );
@@ -181,16 +205,17 @@ public class DrawController : MonoBehaviour {
 
 			if ( exception == true ) {
 				Angle tmp = Angles[i][AnglesLast[i] - 1];
-				for ( int l = 1; l < AnglesLast[i]; l++ )
+				for ( int l = AnglesLast[i] - 1; l > 0 ; l-- )
 					Angles[i][l] = Angles[i][l-1];
 				Angles[i][0] = tmp;
 			}
 		}
-	}
+	}*/
 
 	void Start ()  {
 		for (long i = 0; i < 4; i++)
 			Radiuses.Add ( MovementController.InitialRadius + i * MovementController.InterpolationRadius );
+		Radiuses.Add (PlayerController.GetRadius () );
 	}
 
 	void Awake () {

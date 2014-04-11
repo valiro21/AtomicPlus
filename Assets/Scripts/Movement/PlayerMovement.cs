@@ -60,14 +60,11 @@ public class PlayerMovement : MonoBehaviour {
 				Radius = FinalRadius;
 
 			//draw surrounding circle
-			PlayerController.Draw = true;
-			//DrawController.DrawArc ( ref SurroundingCircle, DegreeAngle, DegreeAngle - 5f, Radius, 0.05f, 0.05f, Resources.Load ( "Materials/WhiteGUI" ) as Material );
-			PlayerController.Draw = false;
 		}
 		else {
 			if ( SurroundingCircle != null ) {
 				foreach ( GameObject i  in SurroundingCircle )
-					i.GetComponent<LineRenderer>().renderer.enabled = false;
+					i.GetComponent<LineRenderer>().renderer.enabled = true;
 				SurroundingCircle = null;
 			}
 		}

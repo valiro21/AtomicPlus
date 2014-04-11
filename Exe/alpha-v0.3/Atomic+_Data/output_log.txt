@@ -1,0 +1,1001 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1247]
+    Renderer: AMD Radeon HD 6570
+    Vendor:   ATI
+    VRAM:     1015 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Vali\Documents\Atomic+\Exe\alpha-v0.3\Atomic+_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Vali\Documents\Atomic+\Exe\alpha-v0.3\Atomic+_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Vali\Documents\Atomic+\Exe\alpha-v0.3\Atomic+_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Vali\Documents\Atomic+\Exe\alpha-v0.3\Atomic+_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.058 seconds
+desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at DrawController.DrawArc (.Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawArcColliders (System.Collections.Generic.List`1& x, Int32 size, .Angle start, .Angle end, .Angle RenderAngle, Single Radius, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.DrawMultiArcCircle (Int32 now, .Angle Offset, Single Radius, Int64 NumberOfArcs, Single Width, Single Heigth, UnityEngine.Material mat) [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Angle].set_Item (Int32 index, .Angle value) [0x00000] in <filename unknown>:0 
+  at DrawController.GetCollisions () [0x00000] in <filename unknown>:0 
+  at DrawController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Platform assembly: C:\Users\Vali\Documents\Atomic+\Exe\alpha-v0.3\Atomic+_Data\Managed\System.dll (this message is harmless)
